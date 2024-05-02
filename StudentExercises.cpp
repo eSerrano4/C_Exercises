@@ -20,7 +20,7 @@ int main() {
 
 //Exercise 2
 
-#include<iostream>
+/* #include<iostream>
 
 using namespace std;
 
@@ -42,4 +42,21 @@ int main() {
 	cout << " the total net salary is " << netSalary << endl;
 
 
+} */
+
+#include<iostream>
+
+using namespace std;
+
+int main()
+{
+	string arr[12] = { "jan", "feb", "mar","apr","may","jun","jul","aug","sep","oct","nov","dec" };
+	int m = 0;
+	//display month name using elfe if ladder    
+	for (int i = 0; i <= (sizeof(arr) / sizeof(arr[0])) - 1; i++) {
+		if (m == i) {
+			cout << arr[i];
+
+		}
+	}
 }
