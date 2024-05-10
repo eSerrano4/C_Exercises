@@ -44,7 +44,7 @@ int main() {
 
 } */
 
-#include<iostream>
+/*#include<iostream>
 
 using namespace std;
 
@@ -59,4 +59,40 @@ int main()
 
 		}
 	}
+}*/
+
+//Exercise 3
+/* Write program to offer discounts on total bill Amount 
+Program should take Total Amount as input and calculate discount
+if bill amount < 100 no discount
+if bill amount is >= 100 and lesss than 500 then 10% discount
+if bill amount is >=500 then 20% discount*/
+
+#include<iostream>
+
+using namespace std;
+
+int main()
+{
+	double total;
+	double discount;
+	double newTotal;
+	
+
+	cout << "Please enter total amount ";
+	cin >> total;
+
+	if (total < 100) {
+		discount = 0.00;
+	}
+	else if (total >= 100 && total < 500) {
+		discount = total * (10 / 100);
+	}
+	else {
+		discount = total * (20 / 100);
+	}
+
+	newTotal = total - discount;
+
+	cout << "your total is " << newTotal <<endl;
 }
