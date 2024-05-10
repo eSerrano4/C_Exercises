@@ -74,25 +74,23 @@ using namespace std;
 
 int main()
 {
-	double total;
-	double discount;
-	double newTotal;
-	
+	double totalAmount;
+	double discount = 0.00;
+	double finalTotal;
 
-	cout << "Please enter total amount ";
-	cin >> total;
+	cout << "Enter total ";
+	cin >> totalAmount;
 
-	if (total < 100) {
+	if(totalAmount >= 500){
+		discount = totalAmount * 20/100;
+	} else if(totalAmount >= 100 && totalAmount <500){
+		discount = totalAmount * 10/100;
+	}else{
 		discount = 0.00;
 	}
-	else if (total >= 100 && total < 500) {
-		discount = total * (10 / 100);
-	}
-	else {
-		discount = total * (20 / 100);
-	}
 
-	newTotal = total - discount;
+	finalTotal = totalAmount - discount;
 
-	cout << "your total is " << newTotal <<endl;
+	cout<<"Your Total is "<< finalTotal<<endl;
+
 }
