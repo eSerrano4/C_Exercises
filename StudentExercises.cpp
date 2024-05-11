@@ -68,7 +68,7 @@ if bill amount < 100 no discount
 if bill amount is >= 100 and lesss than 500 then 10% discount
 if bill amount is >=500 then 20% discount*/
 
-#include<iostream>
+/*#include<iostream>
 
 using namespace std;
 
@@ -92,5 +92,48 @@ int main()
 	finalTotal = totalAmount - discount;
 
 	cout<<"Your Total is "<< finalTotal<<endl;
+
+}
+*/
+
+/*Exercise 4
+all years which are perfectly divisible by 4 are leap years except for century years(years ending 00)
+whis is leap year only it is perfectly divisible by 400.
+For example 2012, 2004, 1968 etc are leap year but 1971, 2006 etc are not leap years. Similarly 1200, 1600, 2000, 2400 are leap years but 1700, 1800, 1900 etc are not.
+
+In this progrma below user is asked to enter a year and this program checks whether the uyear entered by user is leapyear or not.
+*/
+
+#include<iostream>
+
+using namespace std;
+
+int main() 
+{
+	int year;
+
+	cout << "please enter year to test: "<<endl;
+	cin >> year;
+	
+	//first if to check if divisible by 4
+	if (year % 4 == 0) {
+		//if divisible by 4 check to see if divisible by 100
+		if (year % 100 == 0) {
+			//if divisible by 100 check to see if divisible by 400
+			if (year % 400 == 0)
+				//if meet all criteria then it is a leap year
+				cout << year << "Is a leap year";
+
+			else
+				cout << "Not a leap year";
+
+		}
+		//if divisible by 100 is leap year
+		else cout << year << "Is leap year";
+	}
+	//if divisible by 4 is leap year 
+	else 
+		cout << year << "Is a leap year";
+	
 
 }
