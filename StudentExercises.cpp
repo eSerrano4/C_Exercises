@@ -141,7 +141,7 @@ int main()
 //Display Digits of a number - Write a loop to display Digits of a given number in reverse
 
 
-#include<iostream>
+/*#include<iostream>
 
 using namespace std;
 
@@ -157,4 +157,26 @@ int main()
 		numb = numb / 10;
 		cout << reverseDigit << " ";
 	}
+}*/
+
+#include<iostream>
+
+using namespace std;
+
+int main() {
+	int n, r, sum =0, temp; 
+
+	cout << "enter number";
+	cin >> n;
+	temp = n;
+
+	while (n > 0) {
+		r = n % 10;
+		n = n / 10;
+		sum = sum + (r * r * r);
+	}
+	if (sum == temp)
+		cout << "armstrong";
+	else
+		cout << "not armstrong";
 }
