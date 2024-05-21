@@ -104,7 +104,7 @@ For example 2012, 2004, 1968 etc are leap year but 1971, 2006 etc are not leap y
 In this progrma below user is asked to enter a year and this program checks whether the uyear entered by user is leapyear or not.
 */
 
-#include<iostream>
+/*#include<iostream>
 
 using namespace std;
 
@@ -136,4 +136,25 @@ int main()
 		cout << year << "Is a leap year";
 	
 
+}*/
+
+//Display Digits of a number - Write a loop to display Digits of a given number in reverse
+
+
+#include<iostream>
+
+using namespace std;
+
+int main() 
+{
+	int numb; 
+	int reverseDigit;
+	cout << "Enter a number";
+	cin >> numb;
+
+	while (numb > 0) {
+		reverseDigit = numb % 10;
+		numb = numb / 10;
+		cout << reverseDigit << " ";
+	}
 }
