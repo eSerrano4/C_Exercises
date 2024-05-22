@@ -108,13 +108,13 @@ In this progrma below user is asked to enter a year and this program checks whet
 
 using namespace std;
 
-int main() 
+int main()
 {
 	int year;
 
 	cout << "please enter year to test: "<<endl;
 	cin >> year;
-	
+
 	//first if to check if divisible by 4
 	if (year % 4 == 0) {
 		//if divisible by 4 check to see if divisible by 100
@@ -131,10 +131,10 @@ int main()
 		//if divisible by 100 is leap year
 		else cout << year << "Is leap year";
 	}
-	//if divisible by 4 is leap year 
-	else 
+	//if divisible by 4 is leap year
+	else
 		cout << year << "Is a leap year";
-	
+
 
 }*/
 
@@ -145,9 +145,9 @@ int main()
 
 using namespace std;
 
-int main() 
+int main()
 {
-	int numb; 
+	int numb;
 	int reverseDigit;
 	cout << "Enter a number";
 	cin >> numb;
@@ -164,7 +164,7 @@ int main()
 using namespace std;
 
 int main() {
-	int n, r, sum =0, temp; 
+	int n, r, sum =0, temp;
 
 	cout << "enter number";
 	cin >> n;
@@ -180,3 +180,12 @@ int main() {
 	else
 		cout << "not armstrong";
 }// test */
+
+
+// start new problem
+#include<iostream>
+using namespace std;
+
+	int main(){
+
+	}
