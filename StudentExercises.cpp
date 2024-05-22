@@ -159,7 +159,7 @@ int main()
 	}
 }*/
 
-#include<iostream>
+/*#include<iostream>
 
 using namespace std;
 
@@ -179,4 +179,4 @@ int main() {
 		cout << "armstrong";
 	else
 		cout << "not armstrong";
-}
+}// test */
