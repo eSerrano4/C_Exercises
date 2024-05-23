@@ -180,12 +180,4 @@ int main() {
 	else
 		cout << "not armstrong";
 }// test */
-
-
-// start new problem
-#include<iostream>
-using namespace std;
-
-	int main(){
-		int a;
 	}
