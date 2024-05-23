@@ -180,4 +180,28 @@ int main() {
 	else
 		cout << "not armstrong";
 }// test */
+
+#include<iostream>
+
+using namespace std;
+
+int main() {
+	int n, r, temp =0, rev = 0;
+
+	cout << "enter number ";
+	cin >> n;
+	temp = n;
+	while (n > 0) {
+		r = n % 10;
+		n = n / 10;
+		rev = rev * 10 + r;
 	}
+	cout << rev<<endl;
+	if (temp == rev) {
+		cout << "is Palindrome"<<endl
+			;
+	}
+	else {
+		cout << "Not palindrome"<<endl;
+	}
+}
