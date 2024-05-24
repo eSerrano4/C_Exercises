@@ -181,7 +181,7 @@ int main() {
 		cout << "not armstrong";
 }// test */
 
-#include<iostream>
+/*#include<iostream>
 
 using namespace std;
 
@@ -204,4 +204,26 @@ int main() {
 	else {
 		cout << "Not palindrome"<<endl;
 	}
+}*/
+
+#include<iostream>
+
+using namespace std;
+
+int main() {
+	int m, n;
+	cout << "Enter first number " << endl;
+	cin >> m;
+	cout << "Enter Second Number " << endl;
+	cin >> n;
+
+	while (m != n) {
+		if (m > n) {
+			m = m - n;
+		}
+		else if (n > m) {
+			n = n - m;
+		}
+	}
+	cout << "common denominator = " << n;
 }
