@@ -108,13 +108,13 @@ In this progrma below user is asked to enter a year and this program checks whet
 
 using namespace std;
 
-int main()
+int main() 
 {
 	int year;
 
 	cout << "please enter year to test: "<<endl;
 	cin >> year;
-
+	
 	//first if to check if divisible by 4
 	if (year % 4 == 0) {
 		//if divisible by 4 check to see if divisible by 100
@@ -131,10 +131,10 @@ int main()
 		//if divisible by 100 is leap year
 		else cout << year << "Is leap year";
 	}
-	//if divisible by 4 is leap year
-	else
+	//if divisible by 4 is leap year 
+	else 
 		cout << year << "Is a leap year";
-
+	
 
 }*/
 
@@ -145,9 +145,9 @@ int main()
 
 using namespace std;
 
-int main()
+int main() 
 {
-	int numb;
+	int numb; 
 	int reverseDigit;
 	cout << "Enter a number";
 	cin >> numb;
@@ -164,7 +164,7 @@ int main()
 using namespace std;
 
 int main() {
-	int n, r, sum =0, temp;
+	int n, r, sum =0, temp; 
 
 	cout << "enter number";
 	cin >> n;
@@ -179,86 +179,4 @@ int main() {
 		cout << "armstrong";
 	else
 		cout << "not armstrong";
-} */
-
-//exercise 5 Palindrome
-/*#include<iostream>
-
-using namespace std;
-
-int main() {
-	int n, r, temp =0, rev = 0;
-
-	cout << "enter number ";
-	cin >> n;
-	temp = n;
-	while (n > 0) {
-		r = n % 10;
-		n = n / 10;
-		rev = rev * 10 + r;
-	}
-	cout << rev<<endl;
-	if (temp == rev) {
-		cout << "is Palindrome"<<endl
-			;
-	}
-	else {
-		cout << "Not palindrome"<<endl;
-	}
 }*/
-
-/*//find GCD of to numbers 
-#include<iostream>
-
-using namespace std;
-
-int main() {
-	int m, n;
-	cout << "Enter first number " << endl;
-	cin >> m;
-	cout << "Enter Second Number " << endl;
-	cin >> n;
-
-	while (m != n) {
-		if (m > n) {
-			m = m - n;
-		}
-		else if (n > m) {
-			n = n - m;
-		}
-	}
-	cout << "common denominator = " << n;
-}*/
-
-/*#include<iostream>
-
-using namespace std;
-
-int main() {
-	int max, n = 5;;
-	int arr[5] = { 4,7,10,8,1 };
-
-	max = arr[0];
-
-	for (int i = 1; i < 5; i++) {
-		if (arr[i] > max) {
-			max = arr[i];
-		}
-	}
-	cout << max;
-}*/
-
-//create star square pattern using nested loop
-#include<iostream>
-
-using namespace std;
-
-int main() {
-
-	for (int i = 1; i <= 4; i++) {
-		for (int j = 1; j <= 4; j++) {
-			cout << "* ";
-		}
-		cout << endl;
-	}
-}
