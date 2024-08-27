@@ -253,7 +253,9 @@ int main() {
 	}
 }*/
 
-#include<iostream>
+/* //Right triangle 
+
+ #include<iostream>
 using namespace std;
 
 int main(){
@@ -266,4 +268,22 @@ int main(){
 		cout<<endl;
 
 	}
+}*/
+/* Star design*/
+/*#include<iostream>
+using namespace std;
+
+int main(){
+int n = 5; 
+for(int i = 0;i<n;i++){
+	for(int j = 0; j<n; j++){
+		if(j>=i){
+			cout<<"* ";
+		}else{
+			cout<<" ";
+		}
+	}cout<<endl;
 }
+}*/
+
+
