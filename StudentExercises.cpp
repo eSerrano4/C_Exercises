@@ -323,3 +323,68 @@ int main(){
 
 	cout<<"Answer: "<<(avg = sum/n)<<endl;
 }*/
+
+/*
+//multiple matrices
+#include<iostream>
+using namespace std;
+
+int main(){
+	int c1, c2, r1, r2, mult[10][10],b[10][10],a[10][10];
+
+	cout<<"Enter row and column size of first matrix"<<endl;
+	cin>>c1>>r1;
+	cout<<"Enter row and column size of second matrix"<<endl;
+	cin>>c2>>r2;
+	
+
+
+	if(c1!=r2){
+
+		cout<<"Number of columns in first matrix dont match rows in second matrix";
+		return 0;
+
+	}
+
+		cout<< endl << "Enter the numbers for array 1 "<< endl;
+		
+		//fill in first 2D Array with user input
+		for(int i=0; i<r1; ++i){
+			for(int j = 0; j< c1; ++j){
+				cout<<"Enter Element for A"<< i << j << " : ";
+				cin>>a[i][j];
+			}
+		}
+
+		cout<<endl<<"Enter the numbers for array 2 "<<endl;
+		//fill in 2nd 2D Array with user input
+		for(int i = 0; i<r2; ++i){
+			for(int j =0; j<c2; ++j){
+				cout<<"Enter Element for B"<< i << j << " : ";
+				cin>>b[i][j];
+		}
+		}
+
+		for (int i =0; i<r2; ++i){
+			for(int j = 0; j<c1; ++j){
+				for(int k = 0; k < c1; ++k ){
+					mult[i][j]+= a[i][k] * b[k][j];
+					cout<<mult[i][j]<<" ";
+				}
+			}
+		}
+
+		for (int i =0; i<r1; ++i){
+			for(int j = 0; j < c2;++j){
+				cout<<" "<<mult[i][j];
+
+				if(j == c2-1){
+					cout<< endl;
+				}
+			}
+		}
+
+return 0;
+}
+*/
+
